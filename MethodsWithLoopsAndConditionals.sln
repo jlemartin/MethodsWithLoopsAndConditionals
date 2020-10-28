@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsWithLoopsAndConditionals", "MethodsWithLoopsAndConditionals\MethodsWithLoopsAndConditionals.csproj", "{549E6957-AB79-4F0E-B365-D9C5102865DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{549E6957-AB79-4F0E-B365-D9C5102865DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549E6957-AB79-4F0E-B365-D9C5102865DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549E6957-AB79-4F0E-B365-D9C5102865DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549E6957-AB79-4F0E-B365-D9C5102865DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
