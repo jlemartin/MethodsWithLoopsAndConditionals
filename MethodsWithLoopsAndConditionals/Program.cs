@@ -53,9 +53,19 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("Are you eligible to vote? What is your age:");
-            var yourAge = Int32.Parse(Console.ReadLine());
-            VotingCheck(yourAge);
+            //Console.WriteLine("Are you eligible to vote? What is your age:");
+            //var yourAge = Int32.Parse(Console.ReadLine());
+            //VotingCheck(yourAge);
+
+            //Heating Up 1
+            instructions = "Write a method to check if an integer (from the user) is in the range -10 to 10:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Please enter an integer for the range check:");
+            var rangeNum = Convert.ToInt32(Console.ReadLine());
+            RangeCheck(rangeNum);
+
 
 
 
@@ -132,6 +142,19 @@ namespace MethodsWithLoopsAndConditionals
             else
             {
                 Console.WriteLine($"Nope, you can't vote when you are {votingAge} years old.");
+            }
+        }
+
+        // Write a method to check if an integer (from the user) is in the range -10 to 10
+        public static void RangeCheck(int thatNum)
+        {
+            if (thatNum >= -10 && thatNum <= 10)
+            {
+                Console.WriteLine($"{thatNum} is within the -10 to 10 range.");
+            }
+            else
+            {
+                Console.WriteLine($"{thatNum} is outside the -10 to 10 range.");
             }
         }
 
