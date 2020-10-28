@@ -71,10 +71,33 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("Times table for what number:");
-            var timesInt = Convert.ToInt32(Console.ReadLine());
-            TimesTable(timesInt);
+            //Console.WriteLine("Times table for what number:");
+            //var timesInt = Convert.ToInt32(Console.ReadLine());
+            //TimesTable(timesInt);
 
+            // Heating Up 3
+            instructions = "Write a method that takes a number from the user and returns an array with that many indexes. The values shall be random numbers.";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("How many in the array?");
+            var arrayInt = Convert.ToInt32(Console.ReadLine());
+            var anArray = RandomArray(arrayInt);
+            //for (int i = 0; i < anArray.Length; i++)
+            //{
+            //    Console.WriteLine(anArray[i]);
+            //}
+
+            // Heating Up 4
+            instructions = "Write a method to compute the sum of all the elements in an array of integers:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            var sumNum = ArraySum(anArray);
+            Console.WriteLine($"The sum of elements in {anArray} is {sumNum}.");
+
+
+            // Heating Up 5
 
 
         }
@@ -174,6 +197,21 @@ namespace MethodsWithLoopsAndConditionals
                 var prodNum = i * numX;
                 Console.WriteLine($"{numX} x {i} = {prodNum}");
             }
+        }
+
+        // Write a method that takes a number from the user and returns an array with that many indexes.
+        // The values shall be random numbers.
+        public static int[] RandomArray(int numA)
+        {
+            var newArray = new int[numA];
+            var randomGen = new Random();
+
+            for (int i = 0; i < newArray.Length; i++)
+            {
+                newArray[i] = randomGen.Next(1, 100);
+            }
+
+            return newArray;
         }
 
         // 
