@@ -44,9 +44,19 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("Enter number to see if it is positive or negative:");
-            var checkPosNeg = Convert.ToInt32(Console.ReadLine());
-            PosNegCheck(checkPosNeg);
+            //Console.WriteLine("Enter number to see if it is positive or negative:");
+            //var checkPosNeg = Convert.ToInt32(Console.ReadLine());
+            //PosNegCheck(checkPosNeg);
+
+            // Luke Warm 6
+            instructions = "Write a method to read the age of a candidate and determine whether they can vote:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Are you eligible to vote? What is your age:");
+            var yourAge = Int32.Parse(Console.ReadLine());
+            VotingCheck(yourAge);
+
 
 
         }
@@ -109,6 +119,19 @@ namespace MethodsWithLoopsAndConditionals
             else
             {
                 Console.WriteLine($"{checkThis} is a POSITIVE number.");
+            }
+        }
+
+        // Write a method to read the age of a candidate and determine whether they can vote
+        public static void VotingCheck(int votingAge)
+        {
+            if (votingAge >= 18)
+            {
+                Console.WriteLine($"Yes, at {votingAge} you are old enough to vote.");
+            }
+            else
+            {
+                Console.WriteLine($"Nope, you can't vote when you are {votingAge} years old.");
             }
         }
 
