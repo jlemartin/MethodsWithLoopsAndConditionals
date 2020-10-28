@@ -7,20 +7,28 @@ namespace MethodsWithLoopsAndConditionals
         static void Main(string[] args)
         {
             // Luke Warm 1
-            var instructions = "Write a method that will print to the console all numbers 1000 through -1000.";
+            var instructions = "Write a method that will print to the console all numbers 1000 through -1000:";
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Countdown();
+            // Countdown();
 
             // Luke Warm 2
-            instructions = "Write a method that will print to the console numbers 3 through 999 by 3 each time.";
+            instructions = "Write a method that will print to the console numbers 3 through 999 by 3 each time:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            ByThrees();
+            // ByThrees();
 
             // Luke Warm 3
-
+            instructions = "Write a method to accept two integers as parameters and check whether they are equal or not:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Enter first number for comparison:");
+            var int1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number for comparison:");
+            var int2 = Convert.ToInt32(Console.ReadLine());
+            EqualOrNot(int1, int2);
 
 
         }
@@ -45,5 +53,20 @@ namespace MethodsWithLoopsAndConditionals
                 num3 += 3;
             } 
         }
+
+        // Write a method to accept two integers as parameters and check whether they are equal or not.
+        public static void EqualOrNot(int first, int second)
+        {
+            if (first == second)
+            {
+                Console.WriteLine($"{first} and {second} are equal.");
+            }
+            else
+            {
+                Console.WriteLine($"{first} and {second} are NOT equal.");
+            }
+        }
+
+        // 
     }
 }
