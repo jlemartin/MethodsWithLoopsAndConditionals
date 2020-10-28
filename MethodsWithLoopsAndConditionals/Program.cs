@@ -62,10 +62,18 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("Please enter an integer for the range check:");
-            var rangeNum = Convert.ToInt32(Console.ReadLine());
-            RangeCheck(rangeNum);
+            //Console.WriteLine("Please enter an integer for the range check:");
+            //var rangeNum = Convert.ToInt32(Console.ReadLine());
+            //RangeCheck(rangeNum);
 
+            // Heating Up 2
+            instructions = "Write a method to display the multiplication table(from 1 to 12) of a given integer:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Times table for what number:");
+            var timesInt = Convert.ToInt32(Console.ReadLine());
+            TimesTable(timesInt);
 
 
 
@@ -155,6 +163,16 @@ namespace MethodsWithLoopsAndConditionals
             else
             {
                 Console.WriteLine($"{thatNum} is outside the -10 to 10 range.");
+            }
+        }
+
+        // Write a method to display the multiplication table(from 1 to 12) of a given integer
+        public static void TimesTable(int numX)
+        {
+            for (int i = 1; i <= 12; i++)
+            {
+                var prodNum = i * numX;
+                Console.WriteLine($"{numX} x {i} = {prodNum}");
             }
         }
 
