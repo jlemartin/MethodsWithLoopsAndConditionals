@@ -80,9 +80,9 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("How many in the array?");
-            var arrayInt = Convert.ToInt32(Console.ReadLine());
-            var anArray = RandomArray(arrayInt);
+            //Console.WriteLine("How many in the array?");
+            //var arrayInt = Convert.ToInt32(Console.ReadLine());
+            //var anArray = RandomArray(arrayInt);
             //for (int i = 0; i < anArray.Length; i++)
             //{
             //    Console.WriteLine(anArray[i]);
@@ -93,12 +93,18 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            var sumNum = ArraySum(anArray);
-            Console.WriteLine("---------------");
-            Console.WriteLine($"The sum of elements in the array is {sumNum}.");
-
+            //var sumNum = ArraySum(anArray);
+            //Console.WriteLine("---------------");
+            //Console.WriteLine($"The sum of elements in the array is {sumNum}.");
 
             // Heating Up 5
+            instructions = "Write a method to display the cube of the number up to a given integer:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Please enter an integer for the cube display:");
+            var cubeNum = Convert.ToInt32(Console.ReadLine());
+            CubeDisplay(cubeNum);
 
 
         }
@@ -228,6 +234,19 @@ namespace MethodsWithLoopsAndConditionals
             return theSum;
         }
 
-        //
+        // Write a method to display the cube of the number up to given an integer
+        // (If a user inputs the number 3 the method should print to the console:
+        // Number is: 1 and the cube of 1 is:1, Number is: 2 and the cube of 2 is: 8,
+        // Number is: 3 and the cube of 3 is:27)
+        public static void CubeDisplay(int int3)
+        {
+            var cubed = 0;
+
+            for (int i = 1; i <= int3; i++)
+            {
+                cubed = i * i * i;
+                Console.WriteLine($"Number is: {i} and the cube is {cubed}");
+            }
+        }
     }
 }
