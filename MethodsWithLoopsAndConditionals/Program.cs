@@ -10,93 +10,104 @@ namespace MethodsWithLoopsAndConditionals
             var instructions = "Write a method that will print to the console all numbers 1000 through -1000:";
             Console.WriteLine(instructions);
             Console.WriteLine();
-            // Countdown();
+            Countdown();
 
+            Console.WriteLine("----------------");
             // Luke Warm 2
             instructions = "Write a method that will print to the console numbers 3 through 999 by 3 each time:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            // ByThrees();
+            ByThrees();
 
+            Console.WriteLine("----------------");
             // Luke Warm 3
             instructions = "Write a method to accept two integers as parameters and check whether they are equal or not:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("Enter first number for comparison:");
-            //var int1 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Enter second number for comparison:");
-            //var int2 = Convert.ToInt32(Console.ReadLine());
-            //EqualOrNot(int1, int2);
+            Console.WriteLine("Enter first number for comparison:");
+            var int1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number for comparison:");
+            var int2 = Convert.ToInt32(Console.ReadLine());
+            EqualOrNot(int1, int2);
 
+            Console.WriteLine("----------------");
             // Luke Warm 4
             instructions = "Write a method to check whether a given number is even or odd:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("Enter number for odd / even check:");
-            //var check1 = Convert.ToInt32(Console.ReadLine());
-            //OddEvenCheck(check1);
+            Console.WriteLine("Enter number for odd / even check:");
+            var check1 = Convert.ToInt32(Console.ReadLine());
+            OddEvenCheck(check1);
 
+            Console.WriteLine("----------------");
             // Luke Warm 5
             instructions = "Write a method to check whether a given number is positive or negative:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("Enter number to see if it is positive or negative:");
-            //var checkPosNeg = Convert.ToInt32(Console.ReadLine());
-            //PosNegCheck(checkPosNeg);
+            Console.WriteLine("Enter number to see if it is positive or negative:");
+            var checkPosNeg = Convert.ToInt32(Console.ReadLine());
+            PosNegCheck(checkPosNeg);
 
+            Console.WriteLine("----------------");
             // Luke Warm 6
             instructions = "Write a method to read the age of a candidate and determine whether they can vote:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("Are you eligible to vote? What is your age:");
-            //var yourAge = Int32.Parse(Console.ReadLine());
-            //VotingCheck(yourAge);
+            Console.WriteLine("Are you eligible to vote? What is your age:");
+            var yourAge = Int32.Parse(Console.ReadLine());
+            VotingCheck(yourAge);
 
+            Console.WriteLine("----------------");
             //Heating Up 1
             instructions = "Write a method to check if an integer (from the user) is in the range -10 to 10:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("Please enter an integer for the range check:");
-            //var rangeNum = Convert.ToInt32(Console.ReadLine());
-            //RangeCheck(rangeNum);
+            Console.WriteLine("Please enter an integer for the range check:");
+            var rangeNum = Convert.ToInt32(Console.ReadLine());
+            RangeCheck(rangeNum);
 
+            Console.WriteLine("----------------");
             // Heating Up 2
-            instructions = "Write a method to display the multiplication table(from 1 to 12) of a given integer:";
+            instructions = "Write a method to display the multiplication table (from 1 to 12) of a given integer:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("Times table for what number:");
-            //var timesInt = Convert.ToInt32(Console.ReadLine());
-            //TimesTable(timesInt);
+            Console.WriteLine("Times table for what number:");
+            var timesInt = Convert.ToInt32(Console.ReadLine());
+            TimesTable(timesInt);
 
+            Console.WriteLine("----------------");
             // Heating Up 3
             instructions = "Write a method that takes a number from the user and returns an array with that many indexes. The values shall be random numbers.";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //Console.WriteLine("How many in the array?");
-            //var arrayInt = Convert.ToInt32(Console.ReadLine());
-            //var anArray = RandomArray(arrayInt);
+            Console.WriteLine("How many in the array?");
+            var arrayInt = Convert.ToInt32(Console.ReadLine());
+            var anArray = RandomArray(arrayInt);
+            // Displaying the array
             //for (int i = 0; i < anArray.Length; i++)
             //{
             //    Console.WriteLine(anArray[i]);
             //}
 
+            Console.WriteLine("----------------");
             // Heating Up 4
             instructions = "Write a method to compute the sum of all the elements in an array of integers:";
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            //var sumNum = ArraySum(anArray);
-            //Console.WriteLine("---------------");
-            //Console.WriteLine($"The sum of elements in the array is {sumNum}.");
+            var sumNum = ArraySum(anArray);
+            Console.WriteLine("---------------");
+            Console.WriteLine($"The sum of elements in the array is {sumNum}.");
 
+            Console.WriteLine("----------------");
             // Heating Up 5
             instructions = "Write a method to display the cube of the number up to a given integer:";
             Console.WriteLine();
