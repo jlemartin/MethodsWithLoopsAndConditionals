@@ -7,12 +7,20 @@ namespace MethodsWithLoopsAndConditionals
         static void Main(string[] args)
         {
             // Luke Warm 1
-            // Write a method that will print to the console all numbers 1000 through -1000.
-            // Countdown();
+            var instructions = "Write a method that will print to the console all numbers 1000 through -1000.";
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Countdown();
 
             // Luke Warm 2
-            // Write a method that will print to the console numbers 3 through 999 by 3 each time.
+            instructions = "Write a method that will print to the console numbers 3 through 999 by 3 each time.";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
             ByThrees();
+
+            // Luke Warm 3
+
 
 
         }
