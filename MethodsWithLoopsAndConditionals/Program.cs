@@ -35,9 +35,18 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("Enter number for odd / even check:");
-            var check1 = Convert.ToInt32(Console.ReadLine());
-            OddEvenCheck(check1);
+            //Console.WriteLine("Enter number for odd / even check:");
+            //var check1 = Convert.ToInt32(Console.ReadLine());
+            //OddEvenCheck(check1);
+
+            // Luke Warm 5
+            instructions = "Write a method to check whether a given number is positive or negative:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Enter number to see if it is positive or negative:");
+            var checkPosNeg = Convert.ToInt32(Console.ReadLine());
+            PosNegCheck(checkPosNeg);
 
 
         }
@@ -87,6 +96,19 @@ namespace MethodsWithLoopsAndConditionals
             else
             {
                 Console.WriteLine($"{checkIt} is an ODD number.");
+            }
+        }
+
+        // Write a method to check whether a given number is positive or negative
+        public static void PosNegCheck(int checkThis)
+        {
+            if (checkThis < 0)
+            {
+                Console.WriteLine($"{checkThis} is a NEGATIVE number.");
+            }
+            else
+            {
+                Console.WriteLine($"{checkThis} is a POSITIVE number.");
             }
         }
 
