@@ -24,11 +24,20 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine();
             Console.WriteLine(instructions);
             Console.WriteLine();
-            Console.WriteLine("Enter first number for comparison:");
-            var int1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter second number for comparison:");
-            var int2 = Convert.ToInt32(Console.ReadLine());
-            EqualOrNot(int1, int2);
+            //Console.WriteLine("Enter first number for comparison:");
+            //var int1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter second number for comparison:");
+            //var int2 = Convert.ToInt32(Console.ReadLine());
+            //EqualOrNot(int1, int2);
+
+            // Luke Warm 4
+            instructions = "Write a method to check whether a given number is even or odd:";
+            Console.WriteLine();
+            Console.WriteLine(instructions);
+            Console.WriteLine();
+            Console.WriteLine("Enter number for odd / even check:");
+            var check1 = Convert.ToInt32(Console.ReadLine());
+            OddEvenCheck(check1);
 
 
         }
@@ -64,6 +73,20 @@ namespace MethodsWithLoopsAndConditionals
             else
             {
                 Console.WriteLine($"{first} and {second} are NOT equal.");
+            }
+        }
+
+        // Write a method to check whether a given number is even or odd
+        public static void OddEvenCheck(int checkIt)
+        {
+            var modNum = checkIt % 2;
+            if (modNum == 0)
+            {
+                Console.WriteLine($"{checkIt} is an EVEN number.");
+            }
+            else
+            {
+                Console.WriteLine($"{checkIt} is an ODD number.");
             }
         }
 
