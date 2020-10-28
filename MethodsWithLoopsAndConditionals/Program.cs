@@ -94,7 +94,8 @@ namespace MethodsWithLoopsAndConditionals
             Console.WriteLine(instructions);
             Console.WriteLine();
             var sumNum = ArraySum(anArray);
-            Console.WriteLine($"The sum of elements in {anArray} is {sumNum}.");
+            Console.WriteLine("---------------");
+            Console.WriteLine($"The sum of elements in the array is {sumNum}.");
 
 
             // Heating Up 5
@@ -214,6 +215,19 @@ namespace MethodsWithLoopsAndConditionals
             return newArray;
         }
 
-        // 
+        // Write a method to compute the sum of all the elements in an array of integers
+        public static int ArraySum(int[] theArray)
+        {
+            var theSum = 0;
+
+            for (int i = 0; i < theArray.Length; i++)
+            {
+                theSum += theArray[i];
+            }
+
+            return theSum;
+        }
+
+        //
     }
 }
